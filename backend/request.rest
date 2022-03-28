@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJOb3ZpdGEiLCJlbWFpbCI6Im5vdml0YTEyM0BnbWFpbC5jb20iLCJpYXQiOjE2NDgzOTA4MzksImV4cCI6MTY0ODM5MDg1OX0.ZErUe5k7CdYCVcPPih_2ZD0LrH5nc8Ne5P-_YBs0y70
+
+
+### 
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Elzahrawi",
+    "email" : "email@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "novita123@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE http://localhost:5000/logout
